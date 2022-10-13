@@ -3,11 +3,15 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(c-echo
-    main2.cpp
+	main2.cpp
+)
+
+ADD_EXECUTABLE(c-echo-count
+	main.cpp
 )
 
 ADD_EXECUTABLE(test
-    test.cpp
+	test.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
